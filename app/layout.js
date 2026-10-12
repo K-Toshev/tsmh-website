@@ -1,19 +1,23 @@
-import './globals.css';
-import Navigation from '@/components/Navigation';
+import "./globals.css";
+import { Figtree } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { site } from "@/data/site";
+
+const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree" });
 
 export const metadata = {
-  title: 'Thucydides Society for Military History',
-  description: 'Student organization dedicated to military history scholarship and public engagement.'
+  title: { default: site.name, template: `%s | ${site.name}` },
+  description: site.tagline,
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <div className="min-h-screen bg-stone-100 text-stone-900">
-          <Navigation />
-          {children}
-        </div>
+      <body className={`${figtree.variable} font-sans min-h-screen flex flex-col`}>
+        <Navbar />
+        <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-10">{children}</main>
+        <Footer />
       </body>
     </html>
   );
