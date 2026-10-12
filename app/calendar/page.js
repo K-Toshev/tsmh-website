@@ -14,7 +14,7 @@ export default function CalendarPage() {
   useEffect(() => {
     async function load() {
       const { data, error } = await supabase.from("events").select("*").order("start_time");
-      if (error) setError("Events could not be loaded. Check your Supabase keys and try again.");
+      if (error) setError(`Events could not be loaded: ${error.message}`);
       else setEvents(data);
       setLoading(false);
     }
