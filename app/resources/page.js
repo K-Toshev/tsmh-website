@@ -6,7 +6,7 @@ export default function ResourcesPage() {
   return (
     <div>
       <h1 className="text-3xl font-bold tracking-tight">Resources</h1>
-      <p className="text-muted mt-2 max-w-2xl">Placeholder: links the club keeps handy for members.</p>
+      <p className="text-muted mt-2 max-w-2xl">We have curated the following list for your reference.</p>
 
       <div className="mt-8 space-y-10">
         {resources.map((group) => (
