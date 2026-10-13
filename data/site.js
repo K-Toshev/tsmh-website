@@ -3,16 +3,16 @@ export const site = {
   name: "Thucydides Society for Military History",
   shortName: "TSMH",
   logoNavbar: "/logo-navbar.png",
-  tagline: "A placeholder tagline describing what your club does and who it is for.",
-  university: "Your University",
-  contactEmail: "contact@example.edu",
-  meeting: "Meetings: Thursdays at 6:00 PM, Student Union Room 101",
+  tagline: "'I have written my work, not as an essay which is to win the applause of the moment, but as a possession for all time.' -Thucydides, History of the Peloponnesian War, 1.22.",
+  university: "University of Washington",
+  contactEmail: "thucydides.society@gmail.com",
+  meeting: "Meetings: Mondays 5:00-6:15 PM, Location: TBD",
   social: [
     { label: "Instagram", url: "https://www.instagram.com/thucydides.soc?utm_source=ig_web_button_share_sheet&mdxt=ZDNlZDc0MzIxNw==" },
   ],
   pillars: [
-    { title: "Learn together", text: "Placeholder: weekly workshops and study sessions open to every skill level." },
-    { title: "Build things", text: "Placeholder: team projects, hackathons, and competitions throughout the year." },
-    { title: "Meet people", text: "Placeholder: socials, speaker nights, and mentorship with alumni and industry guests." },
+    { title: "Lectures", text: "Learn about military history from all over the world and across time from the experts." },
+    { title: "Wargames", text: "Put your skills to the test, and have some fun along the way." },
+    { title: "Quizzes", text: "Participate in trivia events and win bragging rights." },
   ],
 };
