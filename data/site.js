@@ -1,7 +1,7 @@
 // Edit this file to rebrand the whole site.
 export const site = {
-  name: "Your Organization Name",
-  shortName: "YON",
+  name: "Thucydides Society for Military History",
+  shortName: "TSMH",
   tagline: "A placeholder tagline describing what your club does and who it is for.",
   university: "Your University",
   contactEmail: "contact@example.edu",
