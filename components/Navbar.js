@@ -9,15 +9,15 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="bg-surface border-b border-line">
+    <header className="bg-accent text-white border-b-4 border-gold">
       <nav className="max-w-5xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-3">
-        <Link href="/" className="text-lg font-bold tracking-tight">
+        <Link href="/" className="text-lg font-bold tracking-tight text-white">
           {site.shortName}
         </Link>
         <ul className="flex gap-6 text-sm font-medium">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="text-muted hover:text-accent">
+              <Link href={l.href} className="text-gold-light hover:text-white">
                 {l.label}
               </Link>
             </li>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextEvent from "@/components/NextEvent";
 import { site } from "@/data/site";
 
 export default function HomePage() {
@@ -18,9 +19,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      <NextEvent />
+
       <section className="grid gap-6 sm:grid-cols-3">
         {site.pillars.map((p) => (
-          <div key={p.title} className="border-t-2 border-accent pt-4">
+          <div key={p.title} className="border-t-4 border-gold pt-4">
             <h2 className="font-semibold">{p.title}</h2>
             <p className="text-sm text-muted mt-2">{p.text}</p>
           </div>
